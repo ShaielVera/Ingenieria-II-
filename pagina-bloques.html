@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Etiquetas block</title>
+</head>
+<body class="container py-4">
+    <!-- <header>, <h1> y <p> organizan el encabezado principal de la página. -->
+    <header class="mb-4">
+        <h1 class="alert alert-primary">Ejemplos de etiquetas block en HTML</h1>
+        <p>En esta página se muestran etiquetas de bloque con contenido en español.</p>
+    </header>
+
+    <!-- <nav> contiene enlaces de navegación entre páginas del proyecto. -->
+    <nav class="mb-4">
+        <a class="btn btn-outline-primary me-2" href="index.html">Volver al inicio</a>
+        <a class="btn btn-outline-success me-2" href="pagina-secundaria.html">Ir a etiquetas inline</a>
+        <a class="btn btn-outline-dark" href="pagina-formularios.html">Ir a formularios</a>
+    </nav>
+
+    <!-- <main> agrupa el contenido principal de la página. -->
+    <main>
+        <!-- <section>, <h2> y <p> separan contenido por temas. -->
+        <section class="mb-4">
+            <h2>Sección de párrafos y citas</h2>
+            <p>Este es un párrafo de ejemplo para explicar cómo se usa la etiqueta <code>&lt;p&gt;</code>.</p>
+            <p>Podés crear varios párrafos para dividir ideas y mejorar la lectura.</p>
+            <!-- <blockquote> muestra una cita destacada en bloque. -->
+            <blockquote class="blockquote border-start border-4 ps-3">
+                "La práctica constante es clave para aprender desarrollo web."
+            </blockquote>
+        </section>
+
+        <!-- <article> representa contenido independiente dentro de la página. -->
+        <article class="mb-4">
+            <h2>Artículo breve</h2>
+            <p>Un artículo puede contener texto, subtítulos y otros bloques reutilizables.</p>
+            <!-- <pre> conserva saltos de línea y espacios para mostrar texto con formato fijo. -->
+            <pre class="bg-light p-3 border rounded">Paso 1: Crear archivo HTML
+Paso 2: Agregar estructura base
+Paso 3: Probar en el navegador</pre>
+        </article>
+
+        <!-- <section> con listas de bloque: <ul>, <ol>, <li>, <dl>, <dt> y <dd>. -->
+        <section class="mb-4">
+            <h2>Listas de bloque</h2>
+            <h3>Lista no ordenada</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Planificar contenido</li>
+                <li>Escribir estructura</li>
+                <li>Aplicar estilos</li>
+            </ol>
+
+            <h3>Lista de definición</h3>
+            <dl>
+                <dt>Frontend</dt>
+                <dd>Parte visual e interactiva de un sitio web.</dd>
+                <dt>Backend</dt>
+                <dd>Lógica y procesamiento del lado del servidor.</dd>
+            </dl>
+        </section>
+
+        <!-- <section> con <table>, <thead>, <tbody>, <tr>, <th> y <td> para datos tabulares. -->
+        <section class="mb-4">
+            <h2>Tabla de ejemplo</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Materia</th>
+                            <th>Profesor</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingeniería de Software II</td>
+                            <td>Prof. Pérez</td>
+                            <td>En curso</td>
+                        </tr>
+                        <tr>
+                            <td>Base de Datos</td>
+                            <td>Prof. Gómez</td>
+                            <td>Aprobada</td>
+                        </tr>
+                        <tr>
+                            <td>Programación</td>
+                            <td>Prof. Sánchez</td>
+                            <td>En curso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- <figure> y <figcaption> agrupan una imagen con su descripción. -->
+        <figure class="mb-4">
+            <img src="img/img_Boca.png" alt="Imagen de ejemplo" class="img-thumbnail" width="160">
+            <figcaption class="mt-2">Figura: imagen utilizada como recurso visual del proyecto.</figcaption>
+        </figure>
+
+        <!-- <aside> muestra contenido complementario y <details>/<summary> agrega información desplegable. -->
+        <aside class="mb-4 p-3 bg-light border rounded">
+            <h2 class="h4">Dato adicional</h2>
+            <p>Las etiquetas block ayudan a estructurar la página en secciones claras.</p>
+            <details>
+                <summary>Ver recomendación</summary>
+                <p>Combiná etiquetas semánticas como <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;article&gt;</code> para mejorar la organización.</p>
+            </details>
+        </aside>
+    </main>
+
+    <!-- <footer> y <address> presentan información final de contacto o autoría. -->
+    <footer class="border-top pt-3">
+        <p class="mb-1">Fin de la página de etiquetas block.</p>
+        <address class="mb-0">Autor: Estudiante de Ingeniería de Software II</address>
+    </footer>
+</body>
+</html>
