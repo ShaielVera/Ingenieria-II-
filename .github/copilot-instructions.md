@@ -30,6 +30,10 @@ The project is a static frontend site with a single HTML entry point:
 - Keep user-facing text in Spanish to match existing content.
 - When adding CSS/JS files, place them in `css/` and `js/` respectively and link them explicitly from `index.html`.
 
+## MANDATORY INSTRUCTIONS
+- Hablame en español, por favor. No quiero que me hablen en inglés.
+
+
 ## Recomendaciones
 - Cada vez que ingreses un nuevo código, inserta un comentario en español que explique las etiquetas utilizadas.
 - Los ejemplos y el contenido en genral necesito que esten en español.
