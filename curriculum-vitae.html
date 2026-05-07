@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Curriculum Vitae - Shaiel Vera</title>
+</head>
+<body class="container py-4 bg-light">
+    <!-- <header> contiene el encabezado principal del CV; <h1> define el título visible; <p> muestra texto descriptivo. -->
+    <!-- <strong> resalta importancia, <em> agrega énfasis, <mark> subraya visualmente, <small> reduce tamaño de texto, <sub>/<sup> crean subíndice y superíndice, <code> muestra código y <q> una cita corta. -->
+    <header class="mb-4">
+        <h1 class="alert alert-info mb-3">Curriculum Vitae - Shaiel Vera</h1>
+        <p class="mb-1">Soy <strong>Shaiel Vera</strong>, estudiante de <em>Ingeniería de Software II</em> con interés en <mark>desarrollo web</mark>.</p>
+        <p class="mb-0"><small>Meta actual: mejorar en HTML y CSS</small></p>
+
+    <!-- <hr> dibuja una separación horizontal entre bloques de contenido. -->
+    <hr>
+    <!-- <marquee> crea texto en movimiento (etiqueta clásica de demostración). -->
+    <marquee class="mb-3">Bienvenido a mi CV web, creado con las etiquetas HTML que vengo practicando.</marquee>
+
+    <!-- <nav> agrupa enlaces de navegación; <span> muestra texto inline; <a> crea enlaces a secciones y páginas. -->
+    <!-- <br> fuerza un salto de línea para separar visualmente grupos de enlaces. -->
+    <nav class="mb-4">
+        <span class="me-2">Índice del CV:</span>
+        <a class="btn btn-primary btn-sm me-2" href="#perfil">Perfil</a>
+        <a class="btn btn-success btn-sm me-2" href="#experiencia">Experiencia</a>
+        <a class="btn btn-warning btn-sm me-2" href="#educacion">Educación</a>
+        <a class="btn btn-secondary btn-sm" href="#contacto">Contacto</a>
+        <br>
+        <a class="btn btn-outline-primary btn-sm mt-3 me-2" href="index.html">Volver al inicio</a>
+        <a class="btn btn-outline-success btn-sm mt-3 me-2" href="pagina-bloques.html">Etiquetas block</a>
+        <a class="btn btn-outline-dark btn-sm mt-3" href="pagina-formularios.html">Etiquetas formularios</a>
+    </nav>
+
+    <!-- <main> encapsula el contenido principal del documento. -->
+    <main>
+        <!-- <section> divide por temas, <article> contiene contenido autónomo, <h2> define subtítulo, <blockquote> muestra cita en bloque y <pre> conserva formato de texto. -->
+        <section id="perfil" class="mb-4">
+            <article class="p-3 border rounded bg-white">
+                <h2>Perfil profesional</h2>
+                <p>Me destaco por la responsabilidad, el compromiso y la constancia para aprender tecnologías web.</p>
+                <blockquote class="blockquote border-start border-4 ps-3">
+                    "La práctica diaria transforma la teoría en resultados."
+                </blockquote>
+                <pre class="bg-light p-2 border rounded mb-0">Objetivo 2026:
+- Dominar HTML semántico
+- Mejorar diseño con Bootstrap
+- Crear proyectos completos</pre>
+            </article>
+        </section>
+
+        <!-- <ul> crea lista sin orden, <ol> crea lista ordenada, <li> representa cada ítem, y <dl>/<dt>/<dd> forman lista de definiciones. -->
+        <section id="experiencia" class="mb-4 p-3 border rounded bg-white">
+            <h2>Experiencia y logros</h2>
+            <h3>Experiencia académica</h3>
+            <ul>
+                <li>Desarrollo de páginas estáticas con HTML.</li>
+                <li>Uso de Bootstrap</li>
+                <li>Creación de formularios y tablas para práctica.</li>
+            </ul>
+            <h3>Pasos de trabajo</h3>
+            <ol>
+                <li>Analizar consigna.</li>
+                <li>Diseñar estructura del sitio.</li>
+                <li>Implementar y mejorar presentación final.</li>
+            </ol>
+            <h3>Definiciones</h3>
+            <dl class="mb-0">
+                <dt>Frontend</dt>
+                <dd>Parte visual e interactiva de una aplicación web.</dd>
+                <dt>Responsive</dt>
+                <dd>Diseño adaptable a distintos tamaños de pantalla.</dd>
+            </dl>
+        </section>
+
+        <!-- <div> actúa como contenedor, <table> organiza datos tabulares, <thead>/<tbody> separan encabezado y cuerpo, <tr> define filas, <th> celdas de encabezado y <td> celdas de datos. -->
+        <section id="educacion" class="mb-4">
+            <h2>Educación</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Institución</th>
+                            <th>Carrera</th>
+                            <th>Año</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ISPN20</td>
+                            <td>Tecnicatura en Desarrollo de Software</td>
+                            <td>2do año</td>
+                            <td>En curso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- <form> agrupa controles de entrada, <fieldset>/<legend> organizan campos relacionados, <label> nombra controles, <input> recibe datos, <datalist> sugiere opciones, <select>/<optgroup>/<option> crean listas desplegables, <textarea> permite texto largo y <button> ejecuta acciones. -->
+        <section id="contacto" class="mb-4">
+            <h2>Contacto</h2>
+            <form class="row g-3 border p-3 rounded bg-white">
+                <fieldset class="col-12">
+                    <legend>Enviar consulta</legend>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email" id="email" class="form-control" placeholder="tucorreo@email.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input list="ciudades" id="ciudad" class="form-control" placeholder="Elegí o escribí una ciudad">
+                            <datalist id="ciudades">
+                                <option value="San Juan"></option>
+                                <option value="Mendoza"></option>
+                                <option value="Córdoba"></option>
+                            </datalist>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="motivo" class="form-label">Motivo</label>
+                            <select id="motivo" class="form-select">
+                                <optgroup label="Consulta">
+                                    <option>Laboral</option>
+                                    <option>Académica</option>
+                                </optgroup>
+                                <optgroup label="Otro">
+                                    <option>General</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" rows="3" placeholder="Escribí tu mensaje"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="col-12 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- <footer> cierra el documento y <address> muestra información de contacto/autoría. -->
+    <footer class="border-top pt-3">
+        <p class="mb-1">CV web de Shaiel Vera - 2026</p>
+        <address class="mb-2">San Justo, Santa Fe, Argentina - Estudiante de desarrollo de software</address>
+        <a href="https://www.google.com" target="_blank" class="link-primary">Referencia externa: Google</a>
+    </footer>
+</body>
+</html>
