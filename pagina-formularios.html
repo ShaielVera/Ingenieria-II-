@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Etiquetas de formularios</title>
+    <style>
+        * {
+            color:blueviolet;
+        }
+    </style>
 </head>
 <body class="container py-4">
     <!-- <header>, <h1> y <p> presentan el objetivo de la página. -->
@@ -134,5 +139,86 @@
     <div class="mt-4">
         <a class="btn btn-dark" href="index.html">Volver al index.html</a>
     </div>
+
+
+<h1>HTML Table</h1>
+
+<table border="1">
+	<tr>
+    	<th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Mi&eacute;rcoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+    <tr>
+    	<td>13:10hs</td>
+        <td rowspan="2">Inn y des emprendedor</td>
+        <td rowspan="2">Ingles Tecnico</td>
+        <td rowspan="2">Problemasticas contemporaneas</td>
+        <td rowspan="4">Ingenieria de Software II</td>
+        <td rowspan="9">&nbsp;</td>
+    </tr>
+     <tr>
+    	<td>15:10hs</td>
+    </tr>
+    <tr>
+    	<td>15:10hs</td>
+        <td rowspan="4">Estadistica</td>
+        <td rowspan="7">Programacion I</td>
+        <td rowspan="5">Base de Datos</td>
+    </tr>
+    <tr>
+    	<td>15:50</td>
+    </tr>
+    <tr>
+    	<td>16:00</td>
+        <td rowspan="4">Practicas Profesionalizantes</td>
+    </tr>
+    <tr>
+    	<td>17:20hs</td>
+    </tr>
+    <tr>
+    	<td>18:00hs</td>
+    </tr>
+    <tr>
+    	<td>18:40hs</td>
+    </tr>
+    <tr>
+    	<td>19:20hs</td>
+    </tr>
+</table>
+
+
+<form method="get" action="https://www.gooveadcwgle.com/source">
+<label for="domicilio">Ingrese su Dirección</label>
+<input name="domicilio" id="domicilio" type="text" placeholder="Ingrese su domicilio"/>
+<br>
+<label for="fechanac">Ingrese su Fecha de Nacimiento</label>
+<input name="fechanac" id="fechanac" type="date" placeholder="Ingrese su fecha de Nacimiento"/>
+<br>
+<label for="email">Ingrese su correo electronico</label>
+<input name="email" id="email" type="text" placeholder="Ingrese su correo electronico"/>
+<br>
+<label for="mes">Mes preferido del año:</label>
+<select name="mes" id="mes">
+	<option value="12">Diciembre</option>
+    <option value="1">Enero</option>
+	<option value="2">Febrero</option>
+	<option value="3">Marzo</option>
+    <option value="4">Abril</option>
+	<option value="5">Mayo</option>
+	<option value="6">Junio</option>
+    <option value="7">Julio</option>
+	<option value="8">Agosto</option>
+</select>
+<br>
+<input type="submit">
+<input type="reset">
+
+</form>
+
+
 </body>
 </html>
